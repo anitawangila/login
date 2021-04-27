@@ -10,8 +10,10 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 7rem;
     padding: 0.2rem;
+    overflow: hidden;
 
 }
+   
 body{
     background-color: #f3f3f3;
     font-family: "poppins", sans-serif;
@@ -25,17 +27,27 @@ body{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    
 }
 
 
 .login-container{
     display: flex;
     align-items: center;
-    text-align: center;
+    text-align: center;  
+}
+.signup-container{
+    display: flex;
+    align-items: center;
+    text-align: center; 
+
 }
 form{
     width: 360px;
+   
+    
 }
+
 .avatar{
     width: 100px;
 }
@@ -126,15 +138,28 @@ width: 50%;
     font-family: "poppins",sans-serif;
 }
 a{
-    display: block;
+   display: inline-block;
     text-align: right;
     text-decoration: none;
     color: #999;
     font-size: 0.9rem;
     transition: .3s;
+   /* margin-left: 100px;*/
 }
 a:hover{
     color: #38d398;
+}
+.acct{
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: blue;
+    font-size: 0.9rem;
+    transition: .3s;
+    margin-right: 20px;
+}
+p{
+    margin-right:20px ;
 }
 .btn{
     display: block;
@@ -183,6 +208,9 @@ a:hover{
         grid-template-columns: 1fr;
     }
     .login-container{
+        justify-content: center;
+    }
+    .signup-container{
         justify-content: center;
     }
 }
